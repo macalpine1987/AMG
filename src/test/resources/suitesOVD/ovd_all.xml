@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ovd_all">
+    <test name="ovd_all">
+        <classes>
+            <class name="ru.amg.unisflint.tests.ovd.frontend.Stand207Test" />
+        </classes>
+    </test>
+</suite>

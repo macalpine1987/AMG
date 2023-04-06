@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="sompp_0">
+    <test name="sompp_0">
+        <groups>
+            <run>
+                <include name="sompp_0"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="ru.amg.unisflint.tests.sompp.frontend.Stand25Test" />
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="sodp_reg1">
+    <test name="sodp_reg1">
+        <groups>
+            <run>
+                <include name="sodp_reg1"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="ru.amg.unisflint.tests.sodp.frontend.Stand133Test" />
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="RestAuthSodp">
+    <listeners>
+        <listener class-name="ru.amg.unisflint.tests.sodp.backend.RestAuth133Test" />
+    </listeners>
+    <test name="RestAuthSodp">
+        <groups>
+            <run>
+                <include name="RestAuthSodp"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="ru.amg.unisflint.tests.sodp.backend.RestAuth133Test" />
+        </classes>
+    </test>
+</suite>

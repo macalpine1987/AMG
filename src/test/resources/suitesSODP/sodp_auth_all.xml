@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="sodp_authorization133stand">
+    <test name="sodp_authorization133stand">
+        <classes>
+            <class name="ru.amg.unisflint.tests.sodp.frontend.Stand133Test" />
+        </classes>
+    </test>
+</suite>

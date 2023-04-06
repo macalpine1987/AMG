@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property name="logs" value="src/test/java/logs"/>
+    <timestamp key="bySecond" datePattern="yyyyMMdd'T'HHmmss"/>
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <filter class="ru.amg.unisflint.source.utilities.loggerFilters.BeforeClassFilter"/>
+        <filter class="ru.amg.unisflint.source.utilities.loggerFilters.AfterClassFilter"/>
+        <filter class="ru.amg.unisflint.source.utilities.loggerFilters.BeforeMethodFilter"/>
+        <filter class="ru.amg.unisflint.source.utilities.loggerFilters.AfterMethodFilter"/>
+        <file>${logs}/test-${bySecond}.log/</file>
+        <append>true</append>
+        <immediateFlush>true</immediateFlush>
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <filter class="ru.amg.unisflint.source.utilities.loggerFilters.BeforeClassFilter"/>
+        <filter class="ru.amg.unisflint.source.utilities.loggerFilters.AfterClassFilter"/>
+        <filter class="ru.amg.unisflint.source.utilities.loggerFilters.BeforeMethodFilter"/>
+        <filter class="ru.amg.unisflint.source.utilities.loggerFilters.AfterMethodFilter"/>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <root level="INFO">
+        <appender-ref ref="FILE" />
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>

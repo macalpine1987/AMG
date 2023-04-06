@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="sodp_smoke">
+    <test name="sodp_smoke">
+        <groups>
+            <run>
+                <include name="sodp_smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="ru.amg.unisflint.tests.sodp.frontend.Smoke7Test" />
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="ruk1">
+    <test name="ruk1">
+        <groups>
+            <run>
+                <include name="ruk1"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="ru.amg.unisflint.tests.ovd.frontend.Stand207Test" />
+        </classes>
+    </test>
+</suite>
